@@ -6,7 +6,7 @@ import SqlitePlugin from './SqlitePlugin';
 import Schema from './Schema';
 
 async function graphQLHandler(request, reply) {
-  const {query, variables = {}} = request.payload;
+  const query = request.payload, variables = {};
   const result = await graphql(
     Schema,
     query,
