@@ -16,3 +16,16 @@ $ npm start
 ```
 $ cat scripts/createdb.sql | sqlite3 ./db.sqlite3
 ```
+
+## Client request 
+
+use postman to post the below query 
+
+ {
+      story(id: "3") {
+        text
+        author {
+          name 
+        }
+      }
+}
