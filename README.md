@@ -21,6 +21,8 @@ $ cat scripts/createdb.sql | sqlite3 ./db.sqlite3
 
 use postman to post the below query 
 
+$ url: http://localhost:8000  
+
  {
       story(id: "3") {
         text
